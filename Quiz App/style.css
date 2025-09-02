@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f3f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 1rem;
+    }
+.container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+.progress-bar {
+            height: 0.5rem;
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+
+.progress-fill {
+            height: 100%;
+            background-color: #8b5cf6;
+            transition: width 0.3s ease-in-out;
+        }
+
+.question-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.5;
+            text-align: center;
+            color: #1f2937;
+        }
+.options-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+        }
+
+.option-button {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border-radius: 0.75rem;
+            text-align: left;
+            font-weight: 500;
+            background-color: #f9fafb;
+            border: 1px solid #d1d5db;
+            color: #374151;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+.option-button:hover {
+            background-color: #eff6ff;
+            border-color: #6366f1;
+        }
+
+.option-button.correct {
+            background-color: #d1fae5;
+            border-color: #10b981;
+            color: #065f46;
+        }
+
+.option-button.incorrect {
+            background-color: #fee2e2;
+            border-color: #ef4444;
+            color: #991b1b;
+        }
+.option-button.correct:hover, .option-button.incorrect:hover {
+             background-color: #d1fae5;
+             border-color: #10b981;
+        }
+
+.navigation-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+.nav-button {
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: 0.75rem;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+.primary-button {
+            background-color: #8b5cf6;
+            color: #ffffff;
+        }
+
+.primary-button:hover {
+            background-color: #7c3aed;
+        }
+
+.secondary-button {
+            background-color: #e5e7eb;
+            color: #4b5563;
+        }
+        
+.secondary-button:hover {
+            background-color: #d1d5db;
+        }
+.result-screen {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+.result-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+        
+.result-score {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #4f46e5;
+        }
+        

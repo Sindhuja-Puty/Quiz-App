@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container" id="quiz-container">
+        <!-- Quiz content will be rendered here by JavaScript -->
+        <div id="quiz-content">
+            <div class="flex justify-between items-center text-sm font-medium text-gray-500 mb-4">
+                <span id="question-count">Question 1 of 5</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill" style="width: 20%;"></div>
+            </div>
+            <p class="question-text mt-6" id="question-text">Loading question...</p>
+            <div class="options-grid mt-6" id="options-grid">
+                <!-- Option buttons will be added here -->
+            </div>
+            <div class="navigation-buttons">
+                <button id="next-button" class="nav-button primary-button hidden">Next</button>
+                <button id="restart-button" class="nav-button primary-button hidden">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
